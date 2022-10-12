@@ -1,7 +1,9 @@
-$("video").ontimeupdate = (event) => {
+let video = document.getElementById("player").getElementsByTagName("video")[0]
+
+video.ontimeupdate = (event) => {
 	if(event.target.loop == true)
 		event.target.loop = false
 }
-$("video").onended = (event) => {
+video.onended = (event) => {
 	document.querySelector("#navigation-button-down > ytd-button-renderer").click()
 }
