@@ -1,4 +1,4 @@
-let video = document.getElementById("player").getElementsByTagName("video")[0]
+let video = document.querySelector("ytd-player#player").getElementsByTagName("video")[0]
 
 video.ontimeupdate = (event) => {
 	if(event.target.loop == true)
